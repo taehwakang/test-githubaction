@@ -1,0 +1,9 @@
+name: checkout-action-test
+on: pull_request
+jobs:
+  checking:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3
+      - run: cat content.md
+
